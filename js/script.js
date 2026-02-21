@@ -27,7 +27,7 @@ hamburger.addEventListener('click', toggleMenu);
 closeBtn.addEventListener('click', toggleMenu);
 overlay.addEventListener('click', toggleMenu);
 
-// Close menu when clicking a link (optional but recommended)
+// Close menu when clicking a link
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', () => {
     if (window.innerWidth <= 768) {
@@ -37,7 +37,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
-// Optional: Highlight active section (basic version)
+//Highlight active section
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('section');
   let current = '';
@@ -59,7 +59,7 @@ window.addEventListener('scroll', () => {
   // Sticky nav color change (desktop)
   const nav = document.querySelector('nav');
   if (nav) {
-    // Use a fixed threshold (e.g., 50px)
+    
     const stickyPoint = 50;
     if (window.scrollY > stickyPoint) {
       nav.classList.add('sticky-active');
@@ -72,7 +72,7 @@ window.addEventListener('scroll', () => {
   const mobileHeader = document.querySelector('.mobile-header');
   const offCanvas = document.querySelector('.off-canvas');
   if (mobileHeader && offCanvas) {
-    // Use a fixed threshold (e.g., 50px)
+    
     const stickyMobilePoint = 50;
     if (window.scrollY > stickyMobilePoint) {
       mobileHeader.classList.add('sticky-active-mobile');
