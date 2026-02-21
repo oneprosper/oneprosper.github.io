@@ -36,7 +36,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
   });
 });
 
-
 //Highlight active section
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('section');
